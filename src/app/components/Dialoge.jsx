@@ -59,7 +59,8 @@ export default function DialogeBox({ setShowDial }) {
                         fetch("https://openfabric-backend-vycn.onrender.com",{
                             method:"POST",
                             headers:{
-                                "Content-Type":"application/json"
+                                "Content-Type":"application/json",
+                                "x-access-token": sessionStorage.getItem("token"),
                             },
                             body:JSON.stringify(obj)
                         })
