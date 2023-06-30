@@ -56,7 +56,7 @@ export default function DialogeBox({ setShowDial }) {
                     type="submit"
                     onClick={(e)=>{
                         e.preventDefault()
-                        fetch("http://localhost:5000/",{
+                        fetch("https://openfabric-backend-vycn.onrender.com",{
                             method:"POST",
                             headers:{
                                 "Content-Type":"application/json"
